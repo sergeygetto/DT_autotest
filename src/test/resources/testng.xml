@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+    ВНИМАНИЕ: Этот файл содержит устаревшую конфигурацию!
+    
+    В проекте реализовано 72+ теста, но этот файл содержит только часть из них.
+    Для запуска всех тестов рекомендуется использовать Maven Surefire:
+    
+    mvn test
+    
+    Этот файл оставлен для обратной совместимости, но может быть удален
+    если не используется для выборочного запуска тестов.
+    
+    Для запуска через testng.xml используйте:
+    mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
+-->
+<suite name="API Test Suite" parallel="false">
+    <test name="API Tests">
+        <classes>
+            <class name="com.dt.tests.CustomerApiTest">
+                <methods>
+                    <include name="testCreateCustomer"/>
+                    <include name="testCreateDuplicateCustomer"/>
+                    <include name="testCreateCustomerWithoutName"/>
+                    <include name="testCreateCustomerWithoutCode"/>
+                    <include name="testCreateCustomerWithInvalidJson"/>
+                    <include name="testCreateWidget"/>
+                    <include name="testCreateDuplicateWidget"/>
+                    <include name="testCreateWidgetWithoutCustomerCode"/>
+                    <include name="testCreateWidgetWithoutName"/>
+                    <include name="testCreateWidgetWithNonExistentCustomerCode"/>
+                    <include name="testGetWidgetsByCustomerCode"/>
+                    <include name="testUpdateWidget"/>
+                    <include name="testUpdateWidgetWithNonExistentCustomerCode"/>
+                    <include name="testUpdateNonExistentWidget"/>
+                    <include name="testUpdateWidgetWithEmptyBody"/>
+                    <include name="testUpdateWidgetWithInvalidJson"/>
+                    <include name="testGetWidgetByCode"/>
+                    <include name="testGetNonExistentWidget"/>
+                    <include name="testGetWidgetWithNonExistentCustomerCode"/>
+                    <include name="testDeleteWidget"/>
+                    <include name="testRepeatedDeleteWidget"/>
+                    <include name="testDeleteWidgetWithNonExistentCustomerCode"/>
+                    <include name="testDeleteNonExistentWidget"/>
+                    <include name="testCreateMethodConfig"/>
+                    <include name="testCreateDuplicateMethodConfig"/>
+                    <include name="testCreateMethodConfigWithoutCustomerCode"/>
+                    <include name="testCreateMethodConfigWithoutMethodType"/>
+                    <include name="testCreateMethodConfigWithoutName"/>
+                    <include name="testGetMethodConfigsByCustomerCode"/>
+                    <include name="testUpdateMethodConfig"/>
+                    <include name="testUpdateMethodConfigWithNonExistentCustomerCode"/>
+                    <include name="testUpdateMethodConfigWithNonExistentMethodType"/>
+                    <include name="testGetMethodConfigByType"/>
+                    <include name="testGetMethodConfigWithNonExistentMethodType"/>
+                    <include name="testDeleteMethodConfig"/>
+                    <include name="testRepeatedDeleteMethodConfig"/>
+                    <include name="testDeleteMethodConfigWithNonExistentCustomerCode"/>
+                    <include name="testDeleteMethodConfigWithNonExistentMethodType"/>
+                    <include name="testCreateCustomerConfig"/>
+                    <include name="testCreateCustomerConfigWithoutCustomerCode"/>
+                    <include name="testCreateCustomerConfigWithoutLayerId"/>
+                    <include name="testCreateCustomerConfigWithNonExistentCustomerCode"/>
+                    <include name="testCreateCustomerConfigWithInvalidUUID"/>
+                    <include name="testGetCustomerConfig"/>
+                    <include name="testGetCustomerConfigWithNonExistentCustomerCode"/>
+                    <include name="testDeleteCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

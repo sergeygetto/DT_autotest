@@ -1,0 +1,49 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Allure reports (могут содержать чувствительные данные)
+allure-results/
+allure-report/
+allure-history/
+allure/
+
+# Test reports (могут содержать чувствительные данные)
+target/surefire-reports/
+target/failsafe-reports/
+*.log
+logs/
+
+# Environment files (могут содержать секреты)
+.env
+.env.local
+.env.*.local
+*.properties.local
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
